@@ -1,11 +1,19 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include header %>
+
+
+<div class="page">
+    <div class="hd">
+        <h1 class="page_title">猫途校园</h1>
+        <p class="page_desc">智慧校园考勤，更用心，更贴心！</p>
+    </div>
+    <div class="bd spacing">
+         <div class="button_sp_area">
+            <a href="/lessonlist" class="weui_btn weui_btn_plain_primary js_home"
+            data-id="courses">发起考勤</a>
+            <a href="/check" class="weui_btn weui_btn_plain_primary js_home"
+            data-id="code">参与考勤</a>
+        </div>
+    </div>
+</div>
+
+<%- include footer %>
